@@ -1,0 +1,14 @@
+name: Docker image
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the backend Docker image
+      run: docker build . --file backend/Dockerfile --tag i2v-backend:$(date +%s)
