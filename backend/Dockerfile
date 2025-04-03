@@ -34,7 +34,7 @@ COPY --from=modelbase /app/model/Wan2.1-I2V-14B-720P/diffusion_pytorch_model-000
 COPY --from=modelbase /app/model/Wan2.1-I2V-14B-720P/diffusion_pytorch_model.safetensors.inde.json /app/model/Wan2.1-I2V-14B-720P/diffusion_pytorch_model.safetensors.inde.json
 
 # Copy the application code
-COPY ./api /app/api
+COPY ./backend/api /app/api
 
 # Expose the port for FastAPI
 EXPOSE 8000
