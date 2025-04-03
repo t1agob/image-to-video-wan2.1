@@ -19,7 +19,7 @@ FROM pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime
 WORKDIR /app
 
 # Install Python dependencies
-COPY requirements.txt .
+COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the model from the modelbase stage in different steps to optimize for paralel docker layer download
