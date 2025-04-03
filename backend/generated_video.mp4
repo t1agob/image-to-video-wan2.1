@@ -1,0 +1,1 @@
+{"detail":[{"type":"value_error","loc":["body","images",0],"msg":"Value error, Expected UploadFile, received: <class 'str'>","input":"examples/i2v_input.JPG","ctx":{"error":{}}}]}
